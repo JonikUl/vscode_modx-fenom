@@ -113,9 +113,9 @@
 		"prefix": "m_migx",
 		"body": [
 			"{var \\$${1:items} = \\$_modx->resource.${2:tvName} | fromJSON}",
-			"            {foreach \\$${1:items} as \\$${3:item}}",
-			"                ${0}",
-			"            {/foreach}"
+			"{foreach \\$${1:items} as \\$${3:item}}",
+			"    ${0}",
+			"{/foreach}"
 		],
 		"description": "MIGX"
 	},
