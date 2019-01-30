@@ -35,3 +35,5 @@ VSCode's snippetts for MODX with Fenom
 "m_switch" - switch snippet
 
 "m_include" - include snippet
+
+"m_pdopageajax" - pdoPage with Ajax snippet
