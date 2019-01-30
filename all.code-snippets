@@ -9,13 +9,6 @@
 			"    'includeTVs' => '${4}',",
 			"    'tvPrefix' => '',",
 			"    'sortby' => '{ \"menuindex\":\"ASC\" }'",
-			"    'ajax' => '0'",
-			"    'ajaxMode' => '${5|default, button, scroll|}'",
-			"    'ajaxElemRows' => '#pdopage .rows'",
-			"    'ajaxElemWrapper' => '#pdopage'",
-			"    'ajaxElemPagination' => '#pdopage .pagination'",
-			"    'ajaxElemLink' => '#pdopage .pagination a'",
-			"    'ajaxElemMore' => '#pdopage .btn-more'",
 			"])}",
 			"{\\$_modx->getPlaceholder('page.nav')}"
 		],
@@ -186,6 +179,31 @@
 			"{include \"file:chunks/${1}\" ${2} ${3}}"
 		],
 		"description": "include"
+	},
+	"m_pdopageajax": {
+		"prefix": "pdoPageAjax",
+		"body": [
+			"<div id=\"pdopage\">",
+			"    <div class=\"rows\">",
+			"    {\\$_modx->runSnippet('!pdoPage', [",
+			"        'limit' => ${1:10},",
+			"        'element' => '${2:pdoResources}', ",
+			"        'tpl' => '${3}',",
+			"        'includeTVs' => '${4}',",
+			"        'tvPrefix' => '',",
+			"        'sortby' => '{ \"menuindex\":\"ASC\" }'",
+			"        'ajax' => '1'",
+			"        'ajaxMode' => '${5|default, button, scroll|}'",
+			"        'ajaxElemRows' => '#pdopage .rows'",
+			"        'ajaxElemWrapper' => '#pdopage'",
+			"        'ajaxElemPagination' => '#pdopage .pagination'",
+			"        'ajaxElemLink' => '#pdopage .pagination a'",
+			"        'ajaxElemMore' => '#pdopage .btn-more'",
+			"    ])}",
+			"    </div>",
+			"    {\\$_modx->getPlaceholder('page.nav')}",
+			"</div>"
+		]
 	}
 
 }
