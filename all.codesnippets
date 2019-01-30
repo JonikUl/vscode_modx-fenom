@@ -1,0 +1,190 @@
+{
+	"pdoPage": {
+		"prefix": "m_pdopage",
+		"body": [
+			"{\\$_modx->runSnippet('!pdoPage', [",
+			"    'limit' => ${1:10},",
+			"    'element' => '${2:pdoResources}', ",
+			"    'tpl' => '${3}',",
+			"    'includeTVs' => '${4}',",
+			"    'tvPrefix' => '',",
+			"    'sortby' => '{ \"menuindex\":\"ASC\" }'",
+			"    'ajax' => '0'",
+			"    'ajaxMode' => '${5|default, button, scroll|}'",
+			"    'ajaxElemRows' => '#pdopage .rows'",
+			"    'ajaxElemWrapper' => '#pdopage'",
+			"    'ajaxElemPagination' => '#pdopage .pagination'",
+			"    'ajaxElemLink' => '#pdopage .pagination a'",
+			"    'ajaxElemMore' => '#pdopage .btn-more'",
+			"])}",
+			"{\\$_modx->getPlaceholder('page.nav')}"
+		],
+		"description": "pdoPage"
+	},
+	"pdoResources": {
+		"prefix": "m_pdoresources",
+		"body": [
+			"{\\$_modx->runSnippet('!pdoResources', [",
+			"    'parents' =>'${1:0}'",
+			"    'limit' => 10,",
+			"    'tpl' => '${2}',",
+			"    'includeTVs' => '${3}',",
+			"    'tvPrefix' => '',",
+			"    'sortby' => '{ \"menuindex\":\"ASC\" }',",
+			"    'includeContent' => ${4:0}",
+			"])}"
+		],
+		"description": "pdoResources"
+	},
+	"pdoMenu": {
+		"prefix": "m_pdomenu",
+		"body": [
+			"{\\$_modx->runSnippet('!pdoMenu', [",
+			"    'parents' =>'${1:0}',",
+			"    'level'=>'${2:0}'",
+			"    'includeTVs' => '${3}',",
+			"    'tvPrefix' => '',",
+			"    'tpl' => '${4}',",
+			"    'tplOuter' => '${5}',",
+			"    'tplHere' => '${6}',",
+			"    'tplParentRow' => '${7}',",
+			"    'tplParentRowHere' => '${8}',",
+			"    'tplParentRowActive' => '${9}',",
+			"    'tplInner' => '${10}',",
+			"    'tplInnerRow' => '${11}',",
+			"    'tplInnerHere' => '${12}'",
+			"])}"
+		],
+		"description": "pdoMenu"
+	},
+	"pdoCrumbs": {
+		"prefix": "m_pdocrumbs",
+		"body": [
+			"{\\$_modx->runSnippet('!pdoCrumbs', [",
+			"    'outputSeparator' => '${1}',",
+			"    'tpl' => '${2}',",
+			"    'tplCurrent' => '${3}',",
+			"    'showCurrent' => '${4:1}',",
+			"    'showHome' => '${5:0}'",
+			"])}"
+		],
+		"description": "pdoCrumbs"
+	},
+	"AjaxForm": {
+		"prefix": "m_ajaxform",
+		"body": [
+			"{\\$_modx->runSnippet('!AjaxForm', [",
+			"    'snippet => 'FormIt',",
+			"    'form => '${1:tpl.AjaxForm.example}',",
+			"    'hooks => 'email',",
+			"    'emailSubject => '${2:Тестовое сообщение}',",
+			"    'emailTo => '${3:info@domain.com}',",
+			"    'validate => '${4:name:required,email:required,message:required}',",
+			"    'validationErrorMessage => '${5:В форме содержатся ошибки!}',",
+			"    'successMessage => '${6:Сообщение успешно отправлено}'",
+			"])}"
+		],
+		"description": "AjaxForm"
+	},
+	"Resource": {
+		"prefix": "m_res",
+		"body": [
+			"{\\$_modx->resource.${1|id, pagetitle, description, longtitle, content|}}"
+		],
+		"description": "Resource"
+	},
+	"makeUrl": {
+		"prefix": "m_make",
+		"body": [
+			"{\\$_modx->makeUrl(${1:\\$_modx->resource.id})}"
+		],
+		"description": "makeUrl"
+	},
+	"runSnippet": {
+		"prefix": "m_run",
+		"body": [
+			"{\\$_modx->runSnippet('!${1}', [",
+			"    '${2:param}' => '${3:value}'",
+			"])}"
+		],
+		"description": "runSnippet"
+	},
+	"MIGX": {
+		"prefix": "m_migx",
+		"body": [
+			"{var \\$${1:items} = \\$_modx->resource.${2:tvName} | fromJSON}",
+			"            {foreach \\$${1:items} as \\$${3:item}}",
+			"                ${0}",
+			"            {/foreach}"
+		],
+		"description": "MIGX"
+	},
+	"ignore": {
+		"prefix": "m_ignore",
+		"body": [
+			"{ignore}",
+			"  ${CLIPBOARD}",
+			"{/ignore}"
+		],
+		"description": "ignore"
+	},
+	"if": {
+		"prefix": "m_if",
+		"body": [
+			"{if ${1:expression}}",
+			"    ${2}",
+			"{/if}"
+		],
+		"description": "if"
+	},
+	"eif": {
+		"prefix": "m_eif",
+		"body": [
+			"{if ${1:expression}}",
+			"    ${2}",
+			"{elseif ${3:expression}}",
+			"{/if}"
+		],
+		"description": "elseif"
+	},
+	"ife": {
+		"prefix": "m_ife",
+		"body": [
+			"{if ${1:expression}}",
+			"    ${2}",
+			"{else ${3:expression}}",
+			"    ${4}",
+			"{/if}"
+		],
+		"description": "if-else"
+	},
+	"foreach": {
+		"prefix": "m_foreach",
+		"body": [
+			"{foreach \\$${1:list} as \\$${2:value}}",
+			"    ${3}",
+			"{/foreach}"
+		],
+		"description": "foreach"
+	},
+	"switch": {
+		"prefix": "m_switch",
+		"body": [
+			"{switch \\$${1:var}}",
+			"    {case '${2:value1}'}",
+			"        ${3:output1}",
+			"    {case default}",
+			"        ${4:output2}",
+			"{/switch}"
+		],
+		"description": "switch"
+	},
+	"include": {
+		"prefix": "m_include",
+		"body": [
+			"{include \"file:chunks/${1}\" ${2} ${3}}"
+		],
+		"description": "include"
+	}
+
+}
