@@ -1,6 +1,6 @@
 # VSCode modx fenom
 
-https://github.com/JonikUl/vscode_modx-fenom/m.gif)
+![gif](https://github.com/JonikUl/vscode_modx-fenom/raw/master/image/m.gif)
 
 VSCode's snippetts for MODX with Fenom
 
