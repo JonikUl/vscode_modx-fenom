@@ -1,4 +1,7 @@
 # VSCode modx fenom
+
+![m.gif]({{site.baseurl}}/m.gif)
+
 VSCode's snippetts for MODX with Fenom
 
 "m_pdopage" - pdoPage snippet
