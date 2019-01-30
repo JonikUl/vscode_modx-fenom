@@ -143,6 +143,7 @@
 			"{if ${1:expression}}",
 			"    ${2}",
 			"{elseif ${3:expression}}",
+			"    ${3}",
 			"{/if}"
 		],
 		"description": "elseif"
