@@ -13,6 +13,10 @@ VSCode's snippetts for MODX with Fenom
 
 "m_res" - $_modx -> resource snippet
 
+"m_make" - $_modx -> $_modx->makeUrl() snippet
+
+"m_migx" - fromJSON snippet for MIGX
+
 "m_run" - $_modx -> runSnippet snippet
 
 "m_ignore" - {ignore}{/ignore} snippet for the clipboard text
