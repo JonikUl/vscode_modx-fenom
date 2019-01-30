@@ -181,7 +181,7 @@
 		"description": "include"
 	},
 	"m_pdopageajax": {
-		"prefix": "pdoPageAjax",
+		"prefix": "m_pdopageajax",
 		"body": [
 			"<div id=\"pdopage\">",
 			"    <div class=\"rows\">",
@@ -203,7 +203,7 @@
 			"    </div>",
 			"    {\\$_modx->getPlaceholder('page.nav')}",
 			"</div>"
-		]
+		],
+		"description": "pdoPage with Ajax"
 	}
-
 }
