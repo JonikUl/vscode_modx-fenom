@@ -82,7 +82,7 @@
 	"Resource": {
 		"prefix": "m_res",
 		"body": [
-			"{\\$_modx->resource.${1|id, pagetitle, description, longtitle, content|}}"
+			"{\\$_modx->resource.${1|id,pagetitle,description,longtitle,content|}}"
 		],
 		"description": "Resource"
 	},
