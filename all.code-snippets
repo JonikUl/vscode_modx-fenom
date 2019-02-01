@@ -221,5 +221,14 @@
 		    "{extends '${1|template:, |}${2}'}"
 		],
 		"description": "extends"
+	},
+	"forin": {
+		"prefix": "m_forin",
+		"body": [
+			"{if ${1:\\$_modx->resourse.}|in:[${2}]}",
+			"    ${3}",
+			"{/if}"
+		],
+		"description": "forin"
 	}
 }

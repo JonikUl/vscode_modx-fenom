@@ -41,3 +41,5 @@ VSCode's snippetts for MODX with Fenom
 "m_block" - block snippet
 
 "m_extends" - extends snippet
+
+"m_forin" - for in snippet
