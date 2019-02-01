@@ -205,5 +205,14 @@
 			"</div>"
 		],
 		"description": "pdoPage with Ajax"
+	},
+	"block": {
+		"prefix": "m_block",
+		"body": [
+			"{block '${1}'}",
+			"    ${2}",
+			"{/block}"
+		],
+		"description": "block"
 	}
 }
