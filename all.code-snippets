@@ -193,7 +193,7 @@
 			"        'tvPrefix' => '',",
 			"        'sortby' => '{ \"menuindex\":\"ASC\" }'",
 			"        'ajax' => '1'",
-			"        'ajaxMode' => '${5|default, button, scroll|}'",
+			"        'ajaxMode' => '${5|default,button,scroll|}'",
 			"        'ajaxElemRows' => '#pdopage .rows'",
 			"        'ajaxElemWrapper' => '#pdopage'",
 			"        'ajaxElemPagination' => '#pdopage .pagination'",
@@ -214,5 +214,12 @@
 			"{/block}"
 		],
 		"description": "block"
+	},
+	"extends": {
+		"prefix": "m_extends",
+		"body": [
+		    "{extends '${1|template:, |}${2}'}"
+		],
+		"description": "extends"
 	}
 }
