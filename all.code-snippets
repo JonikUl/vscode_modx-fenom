@@ -176,7 +176,7 @@
 	"include": {
 		"prefix": "m_include",
 		"body": [
-			"{include \"file:chunks/${1}\" ${2} ${3}}"
+			"{include \"file:${1|chunks/,templates/,snippets/|}${2}\"}"
 		],
 		"description": "include"
 	},
