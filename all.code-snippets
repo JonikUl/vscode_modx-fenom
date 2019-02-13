@@ -230,5 +230,12 @@
 			"{/if}"
 		],
 		"description": "forin"
-	}
+	},
+	"user": {
+		"prefix": "m_user",
+		"body": [
+			"{\\$_modx->user.${1|id,username,email,fullname|}}"
+		],
+		"description": "User"
+	},
 }

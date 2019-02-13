@@ -44,3 +44,4 @@ VSCode's snippetts for MODX with Fenom
 ![gif](https://github.com/JonikUl/vscode_modx-fenom/raw/master/gifs/m_extends.gif)
 ## "m_forin" - for in snippet
 ![gif](https://github.com/JonikUl/vscode_modx-fenom/raw/master/gifs/m_forin.gif)
+## "m_user" - $_modx->user snippet
