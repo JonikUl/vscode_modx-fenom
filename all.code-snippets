@@ -67,14 +67,14 @@
 		"prefix": "m_ajaxform",
 		"body": [
 			"{\\$_modx->runSnippet('!AjaxForm', [",
-			"    'snippet => 'FormIt',",
-			"    'form => '${1:tpl.AjaxForm.example}',",
-			"    'hooks => 'email',",
-			"    'emailSubject => '${2:Тестовое сообщение}',",
-			"    'emailTo => '${3:info@domain.com}',",
-			"    'validate => '${4:name:required,email:required,message:required}',",
-			"    'validationErrorMessage => '${5:В форме содержатся ошибки!}',",
-			"    'successMessage => '${6:Сообщение успешно отправлено}'",
+			"    'snippet' => 'FormIt',",
+			"    'form' => '${1:tpl.AjaxForm.example}',",
+			"    'hooks' => 'email',",
+			"    'emailSubject' => '${2:Тестовое сообщение}',",
+			"    'emailTo' => '${3:info@domain.com}',",
+			"    'validate' => '${4:name:required,email:required,message:required}',",
+			"    'validationErrorMessage' => '${5:В форме содержатся ошибки!}',",
+			"    'successMessage' => '${6:Сообщение успешно отправлено}'",
 			"])}"
 		],
 		"description": "AjaxForm"
@@ -218,7 +218,7 @@
 	"extends": {
 		"prefix": "m_extends",
 		"body": [
-		    "{extends '${1|template:, |}${2}'}"
+			"{extends '${1|template:, |}${2}'}"
 		],
 		"description": "extends"
 	},
