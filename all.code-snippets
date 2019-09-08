@@ -105,7 +105,7 @@
 	"MIGX": {
 		"prefix": "m_migx",
 		"body": [
-			"{var \\$${1:items} = \\$_modx->resource.${2:tvName} | fromJSON}",
+			"{set \\$${1:items} = \\$_modx->resource.${2:tvName} | fromJSON}",
 			"{foreach \\$${1:items} as \\$${3:item}}",
 			"    ${0}",
 			"{/foreach}"
@@ -164,7 +164,7 @@
 	"switch": {
 		"prefix": "m_switch",
 		"body": [
-			"{switch \\$${1:var}}",
+			"{switch \\$${1:set}}",
 			"    {case '${2:value1}'}",
 			"        ${3:output1}",
 			"    {case default}",
