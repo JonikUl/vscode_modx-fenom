@@ -241,7 +241,7 @@
 	"config": {
 		"prefix": "m_config",
 		"body": [
-			"{\\$_modx->config.${1|sitename|}}"
+			"{\\$_modx->config.${1|site_url|}}"
 		],
 		"description": "User"
 	},
