@@ -238,4 +238,11 @@
 		],
 		"description": "User"
 	},
+	"config": {
+		"prefix": "m_config",
+		"body": [
+			"{\\$_modx->config.${1|sitename|}}"
+		],
+		"description": "User"
+	},
 }
