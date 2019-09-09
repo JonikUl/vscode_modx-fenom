@@ -24,7 +24,7 @@
 			"    'includeTVs' => '${4}',",
 			"    'tvPrefix' => '',",
 			"    'sortby' => '{ \"menuindex\":\"ASC\" }'",
-			"])}",
+			"]}",
 			"{'page.nav' | placeholder}"
 		],
 		"description": "pdoPage"
@@ -41,6 +41,21 @@
 			"    'sortby' => '{ \"menuindex\":\"ASC\" }',",
 			"    'includeContent' => ${4:0}",
 			"])}"
+		],
+		"description": "pdoResources"
+	},
+	"pdoResources2": {
+		"prefix": "-m_pdoresources",
+		"body": [
+			"{'!pdoResources' | snippet: [",
+			"    'parents' =>'${1:0}'",
+			"    'limit' => 10,",
+			"    'tpl' => '${2}',",
+			"    'includeTVs' => '${3}',",
+			"    'tvPrefix' => '',",
+			"    'sortby' => '{ \"menuindex\":\"ASC\" }',",
+			"    'includeContent' => ${4:0}",
+			"]}"
 		],
 		"description": "pdoResources"
 	},
