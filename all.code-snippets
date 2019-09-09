@@ -143,6 +143,22 @@
 		],
 		"description": "AjaxForm"
 	},
+	"AjaxForm2": {
+		"prefix": "-m_ajaxform",
+		"body": [
+			"{'!AjaxForm' | snippet: [",
+			"    'snippet' => 'FormIt',",
+			"    'form' => '${1:tpl.AjaxForm.example}',",
+			"    'hooks' => 'email',",
+			"    'emailSubject' => '${2:Тестовое сообщение}',",
+			"    'emailTo' => '${3:info@domain.com}',",
+			"    'validate' => '${4:name:required,email:required,message:required}',",
+			"    'validationErrorMessage' => '${5:В форме содержатся ошибки!}',",
+			"    'successMessage' => '${6:Сообщение успешно отправлено}'",
+			"]}"
+		],
+		"description": "AjaxForm"
+	},
 	"Resource": {
 		"prefix": "m_res",
 		"body": [
