@@ -80,6 +80,27 @@
 		],
 		"description": "pdoMenu"
 	},
+	"pdoMenu2": {
+		"prefix": "-m_pdomenu",
+		"body": [
+			"{'!pdoMenu' | snippet: [",
+			"    'parents' =>'${1:0}',",
+			"    'level'=>'${2:0}'",
+			"    'includeTVs' => '${3}',",
+			"    'tvPrefix' => '',",
+			"    'tpl' => '${4}',",
+			"    'tplOuter' => '${5}',",
+			"    'tplHere' => '${6}',",
+			"    'tplParentRow' => '${7}',",
+			"    'tplParentRowHere' => '${8}',",
+			"    'tplParentRowActive' => '${9}',",
+			"    'tplInner' => '${10}',",
+			"    'tplInnerRow' => '${11}',",
+			"    'tplInnerHere' => '${12}'",
+			"]}"
+		],
+		"description": "pdoMenu"
+	},
 	"pdoCrumbs": {
 		"prefix": "m_pdocrumbs",
 		"body": [
