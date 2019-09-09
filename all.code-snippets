@@ -14,6 +14,21 @@
 		],
 		"description": "pdoPage"
 	},
+	"pdoPage2": {
+		"prefix": "-m_pdopage",
+		"body": [
+			"{\\'!pdoPage'| snippet: [",
+			"    'limit' => ${1:10},",
+			"    'element' => '${2:pdoResources}', ",
+			"    'tpl' => '${3}',",
+			"    'includeTVs' => '${4}',",
+			"    'tvPrefix' => '',",
+			"    'sortby' => '{ \"menuindex\":\"ASC\" }'",
+			"])}",
+			"{\\'page.nav' | placeholder}"
+		],
+		"description": "pdoPage"
+	},
 	"pdoResources": {
 		"prefix": "m_pdoresources",
 		"body": [
