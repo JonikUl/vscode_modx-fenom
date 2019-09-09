@@ -17,7 +17,7 @@
 	"pdoPage2": {
 		"prefix": "-m_pdopage",
 		"body": [
-			"{\\'!pdoPage'| snippet: [",
+			"{'!pdoPage'| snippet: [",
 			"    'limit' => ${1:10},",
 			"    'element' => '${2:pdoResources}', ",
 			"    'tpl' => '${3}',",
@@ -25,7 +25,7 @@
 			"    'tvPrefix' => '',",
 			"    'sortby' => '{ \"menuindex\":\"ASC\" }'",
 			"])}",
-			"{\\'page.nav' | placeholder}"
+			"{'page.nav' | placeholder}"
 		],
 		"description": "pdoPage"
 	},
