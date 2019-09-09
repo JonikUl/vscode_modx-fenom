@@ -173,6 +173,13 @@
 		],
 		"description": "makeUrl"
 	},
+	"makeUrl2": {
+		"prefix": "-m_make",
+		"body": [
+			"{${1} | url}"
+		],
+		"description": "makeUrl"
+	},
 	"runSnippet": {
 		"prefix": "m_run",
 		"body": [
