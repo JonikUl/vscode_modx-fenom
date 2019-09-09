@@ -114,6 +114,19 @@
 		],
 		"description": "pdoCrumbs"
 	},
+	"pdoCrumbs2": {
+		"prefix": "-m_pdocrumbs",
+		"body": [
+			"{'!pdoCrumbs' | snippet: [",
+			"    'outputSeparator' => '${1}',",
+			"    'tpl' => '${2}',",
+			"    'tplCurrent' => '${3}',",
+			"    'showCurrent' => '${4:1}',",
+			"    'showHome' => '${5:0}'",
+			"]}"
+		],
+		"description": "pdoCrumbs"
+	},
 	"AjaxForm": {
 		"prefix": "m_ajaxform",
 		"body": [
