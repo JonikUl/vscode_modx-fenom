@@ -372,6 +372,6 @@
 		"body": [
 			"{\\$_modx->config.${1|site_url|}}"
 		],
-		"description": "User"
+		"description": "config"
 	},
 }
