@@ -189,6 +189,15 @@
 		],
 		"description": "runSnippet"
 	},
+	"runSnippet2": {
+		"prefix": "-m_run",
+		"body": [
+			"{'!${1}' | snippet: [",
+			"    '${2:param}' => '${3:value}'",
+			"]}"
+		],
+		"description": "runSnippet"
+	},
 	"MIGX": {
 		"prefix": "m_migx",
 		"body": [
