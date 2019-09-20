@@ -276,6 +276,13 @@
 		],
 		"description": "include"
 	},
+	"insert": {
+		"prefix": "m_insert",
+		"body": [
+			"{insert \"file:${1|chunks/,templates/,snippets/|}${2}\"}"
+		],
+		"description": "insert"
+	},
 	"m_pdopageajax": {
 		"prefix": "m_pdopageajax",
 		"body": [
