@@ -309,6 +309,32 @@
 		],
 		"description": "pdoPage with Ajax"
 	},
+	"m_pdopageajax2": {
+		"prefix": "-m_pdopageajax",
+		"body": [
+			"<div id=\"pdopage\">",
+			"    <div class=\"rows\">",
+			"    {'!pdoPage' | snippet: [",
+			"        'limit' => ${1:10},",
+			"        'element' => '${2:pdoResources}', ",
+			"        'tpl' => '${3}',",
+			"        'includeTVs' => '${4}',",
+			"        'tvPrefix' => '',",
+			"        'sortby' => '{ \"menuindex\":\"ASC\" }'",
+			"        'ajax' => '1'",
+			"        'ajaxMode' => '${5|default,button,scroll|}'",
+			"        'ajaxElemRows' => '#pdopage .rows'",
+			"        'ajaxElemWrapper' => '#pdopage'",
+			"        'ajaxElemPagination' => '#pdopage .pagination'",
+			"        'ajaxElemLink' => '#pdopage .pagination a'",
+			"        'ajaxElemMore' => '#pdopage .btn-more'",
+			"    ])}",
+			"    </div>",
+			"    {\\$_modx->getPlaceholder('page.nav')}",
+			"</div>"
+		],
+		"description": "pdoPage with Ajax"
+	},
 	"block": {
 		"prefix": "m_block",
 		"body": [
