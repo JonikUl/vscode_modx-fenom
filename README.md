@@ -1,6 +1,7 @@
 # VSCode MODX fenom
 
 m_name - syntax like {$_modx->runSnippet('snippet_name', [params])}
+
 -m_name - - syntax like {'snippet_name' | snippet: [params]}
 
 ![gif](https://github.com/JonikUl/vscode_modx-fenom/raw/master/gifs/m.gif)
