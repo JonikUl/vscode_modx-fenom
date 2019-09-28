@@ -374,4 +374,18 @@
 		],
 		"description": "config"
 	},
+	"placeholder": {
+		"prefix": "m_placeholder",
+		"body": [
+			"{\\$_modx->getPlaceholder('${1}')}"
+		],
+		"description": "placeholder"
+	},
+	"placeholder2": {
+		"prefix": "-m_placeholder",
+		"body": [
+			"{'${1}' | placeholder}"
+		],
+		"description": "placeholder2"
+	},
 }
