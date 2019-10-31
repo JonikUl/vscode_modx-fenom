@@ -166,6 +166,13 @@
 		],
 		"description": "Resource"
 	},
+	"Resource2": {
+		"prefix": "-m_res",
+		"body": [
+			"{${1} | resource: ${2|pagetitle,description,longtitle,content|}}"
+		],
+		"description": "Resource2"
+	},
 	"makeUrl": {
 		"prefix": "m_make",
 		"body": [
@@ -387,5 +394,14 @@
 			"{'${1}' | placeholder}"
 		],
 		"description": "placeholder2"
+	},
+	"getObject": {
+		"prefix": "m_getObject",
+		"body": [
+			"\\$modx->getObject('${1:class}', [",
+			"    '${2:param}' => '${3:value},'",
+			"]);",
+		],
+		"description": "getObject"
 	},
 }
